@@ -4,10 +4,189 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RS School</title>
-  <link rel="stylesheet" href="style.css">
+  <title>cv</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+  <script defer src="js/index.js"></script>
 </head>
 <body>
-  <h1>Hello</h1>
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__wrapper">        
+        <button class="header__btn" data-btn="burger">
+          <img src="assets/svg/btn_burger.svg" alt="burger button">
+        </button>
+        <nav class="header__nav" data-name="nav">
+          <ul class="header__list">
+            <li class="header__item" data-name="header__item">
+              <a href="#contacts" class="header__link" >
+                contacts
+              </a>
+            </li>
+            <li class="header__item" data-name="header__item">
+              <a href="#summary" class="header__link" >
+                summary
+              </a>
+            </li>
+            <li class="header__item" data-name="header__item">
+              <a href="#skills" class="header__link" >
+                skills
+              </a>
+            </li>
+            <li class="header__item" data-name="header__item">
+              <a href="#code" class="header__link" >
+                code
+              </a>
+            </li>            
+            <li class="header__item" data-name="header__item">
+              <a href="#education" class="header__link" >
+                education
+              </a>
+            </li>
+            <li class="header__item" data-name="header__item">
+              <a href="#english" class="header__link" >
+                english
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <div class="main__info">
+        <div class="main__text">
+          <h1 class="main__title">Vyacheslav Radchenko</h1>
+          <p class="main__subtitle">RS school student</p>
+        </div>
+        <div class="main__avatar">
+          <img src="assets/img/avatar.jpg" alt="my avatar">
+        </div>
+      </div>
+      <div class="main__wrapper">
+        <section class="contacts" id="contacts">
+          <h2>contacts</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <img class="contacts__icon" src="assets/icons/geo.png" alt="geolocation">
+              <a href="#">Moscow, Russia</a>
+            </li>
+            <li class="contacts__item">
+              <img class="contacts__icon" src="assets/icons/email.png" alt="geolocation">
+              <a href="mailto:for1s8@ya.ru">for1s8@ya.ru</a>
+            </li>
+            <li class="contacts__item">
+              <img class="contacts__icon" src="assets/icons/github.png" alt="geolocation">
+              <a href="https://github.com/Slawone">@slawone</a>
+            </li>
+            <li class="contacts__item">
+              <img class="contacts__icon" src="assets/icons//discord.png" alt="geolocation">
+              <a href="#">@slawone</a>
+            </li>
+          </ul>
+        </section>
+        <section class="summary" id="summary">
+          <h2>summary</h2>
+          <p class="summary__text">I came here to become a junior front-end developer. I have very little experience in programming, but I hope this will change quickly. I will be glad to see feedback from course participants and teachers.</p> 
+        </section>
+        <section class="skills" id="skills">
+          <h2>skills</h2>
+          <ul class="skills__list">
+            <li class="skills__item">
+              <img class="skills__icon" src="assets/icons/html.png" alt="html">
+              <div class="skills__scale">
+                <div class="skills__progress skills__progress-html"></div>
+              </div>
+              <div class="skills__percent">80%</div>
+            </li>
+            <li class="skills__item">
+              <img class="skills__icon" src="assets/icons/css.png" alt="html">
+              <div class="skills__scale">
+                <div class="skills__progress skills__progress-css"></div>
+              </div>
+              <div class="skills__percent">60%</div>
+            </li>
+            <li class="skills__item">
+              <img class="skills__icon" src="assets/icons/js.png" alt="html">
+              <div class="skills__scale">
+                <div class="skills__progress skills__progress-js"></div>
+              </div>
+              <div class="skills__percent">20%</div>
+            </li>
+            <li class="skills__item">
+              <img class="skills__icon" src="assets/icons/figma.png" alt="html">
+              <div class="skills__scale">
+                <div class="skills__progress skills__progress-figma"></div>
+              </div>
+              <div class="skills__percent">30%</div>
+            </li>
+            <li class="skills__item">
+              <img class="skills__icon" src="assets/icons/photoshop.png" alt="html">
+              <div class="skills__scale">
+                <div class="skills__progress skills__progress-ps"></div>
+              </div>
+              <div class="skills__percent">30%</div>
+            </li>
+          </ul>
+        </section>
+        <section class="code" id="code">
+          <h2>code</h2>
+          <div class="code__example">
+            <img src="assets/img//code.jpg" alt="example of code">
+            <!-- <code>const $burgerButton = document.querySelector('[data-btn="burger"]') <br>
+              const $headerItems = document.querySelectorAll('[data-name="header__item"]') <br><br>
+              
+              const handleBurgerClick = () => {
+                const $nav = document.querySelector('[data-name="nav"]')
+                $nav.classList.toggle('active')
+              }
+              <br><br>
+              const handleItemClick = () => {
+                const $nav = document.querySelector('[data-name="nav"]')
+                $nav.classList.remove('active')
+              }
+              <br><br>
+              $burgerButton.addEventListener('click', handleBurgerClick)
+              $headerItems.forEach(item => {
+                item.addEventListener('click', handleItemClick)  
+              })</code> -->
+          </div>
+        </section>        
+        <section class="education" id="education">
+          <h2>education</h2>
+          <ul class="education__list">
+            <li class="education__item">
+              <a href="https://developer.mozilla.org/ru/" class="education__link" target="_blank">MDN</a>
+            </li>
+            <li class="education__item">
+              <a href="https://learn.javascript.ru/" class="education__link" target="_blank">Learn Javascript</a>
+            </li>
+            <li class="education__item">
+              <a href="https://htmlacademy.ru" class="education__link" target="_blank">HTML Academy</a>
+            </li>
+            <li class="education__item">
+              <a href="https://ru.code-basics.com/" class="education__link" target="_blank">Code Basics</a>
+            </li>
+          </ul>
+        </section>
+        <section class="english" id="english">
+          <h2>english</h2>
+          <p class="english__text">According to official CEFR guidelines, an A1 English speaker:<br> Can understand and use familiar everyday expressions and very simple phrases.<br> Can introduce himself and others, ask and answer questions about personal details: where he lives, people he knows, and things he owns. <br>But i'm trying...</p>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+          <a href="https://github.com/Slawone" class="footer_link" target="_blank">My Github</a>        
+          <a class="footer__link" href="https://rs.school/js/">
+            <img class="footer__image" src="assets/img/rs.png" alt="rs school">
+          </a>
+          <a class="footer__btn" href="#header">Наверх!</a>        
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
